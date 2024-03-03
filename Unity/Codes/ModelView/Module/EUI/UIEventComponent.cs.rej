@@ -1,0 +1,9 @@
+diff a/Unity/Codes/ModelView/Module/EUI/UIEventComponent.cs b/Unity/Codes/ModelView/Module/EUI/UIEventComponent.cs	(rejected hunks)
+@@ -6,5 +6,6 @@ namespace ET
+     {
+         public static UIEventComponent Instance { get; set; }
+         public readonly Dictionary<WindowID, IAUIEventHandler> UIEventHandlers = new Dictionary<WindowID, IAUIEventHandler>();
++        public bool IsClicked { get; set; }
+     }
+ }
+\ No newline at end of file

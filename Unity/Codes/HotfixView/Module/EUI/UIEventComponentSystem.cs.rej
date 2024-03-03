@@ -1,0 +1,21 @@
+diff a/Unity/Codes/HotfixView/Module/EUI/UIEventComponentSystem.cs b/Unity/Codes/HotfixView/Module/EUI/UIEventComponentSystem.cs	(rejected hunks)
+@@ -17,6 +17,7 @@ namespace ET
+     {
+         public override void Destroy(UIEventComponent self)
+         {
++            self.IsClicked = false;
+             self.UIEventHandlers.Clear();
+             UIEventComponent.Instance = null;
+         }
+@@ -44,5 +46,10 @@ namespace ET
+             Log.Error($"windowId : {windowID} is not have any uiEvent");
+             return null;
+         }
++
++        public static void SetUIClicked(this UIEventComponent self, bool isClicked)
++        {
++            self.IsClicked = isClicked;
++        }
+     }
+ }
+\ No newline at end of file

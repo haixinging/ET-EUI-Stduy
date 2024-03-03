@@ -1,0 +1,9 @@
+diff a/Unity/Assets/Bundles/Atlas/Common/common.spriteatlas b/Unity/Assets/Bundles/Atlas/Common/common.spriteatlas	(rejected hunks)
+@@ -29,6 +29,7 @@ SpriteAtlas:
+       allowAlphaSplitting: 0
+       enableRotation: 0
+       enableTightPacking: 1
++      enableAlphaDilation: 0
+     secondaryTextureSettings: {}
+     variantMultiplier: 1
+     packables:

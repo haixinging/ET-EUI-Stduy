@@ -1,0 +1,37 @@
+diff a/Unity/Packages/packages-lock.json b/Unity/Packages/packages-lock.json	(rejected hunks)
+@@ -8,7 +8,7 @@
+       "url": "https://packages.unity.cn"
+     },
+     "com.unity.ide.rider": {
+-      "version": "3.0.7",
++      "version": "3.0.18",
+       "depth": 0,
+       "source": "registry",
+       "dependencies": {
+@@ -17,7 +17,7 @@
+       "url": "https://packages.unity.cn"
+     },
+     "com.unity.ide.visualstudio": {
+-      "version": "2.0.11",
++      "version": "2.0.17",
+       "depth": 0,
+       "source": "registry",
+       "dependencies": {
+@@ -26,7 +26,7 @@
+       "url": "https://packages.unity.cn"
+     },
+     "com.unity.test-framework": {
+-      "version": "1.1.29",
++      "version": "1.1.31",
+       "depth": 1,
+       "source": "registry",
+       "dependencies": {
+@@ -46,7 +46,7 @@
+       "url": "https://packages.unity.cn"
+     },
+     "com.unity.timeline": {
+-      "version": "1.6.2",
++      "version": "1.6.4",
+       "depth": 0,
+       "source": "registry",
+       "dependencies": {

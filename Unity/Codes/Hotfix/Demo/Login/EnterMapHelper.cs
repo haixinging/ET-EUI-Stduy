@@ -5,6 +5,7 @@ namespace ET
 {
     public static class EnterMapHelper
     {
+        // ReSharper disable Unity.PerformanceAnalysis
         public static async ETTask EnterMapAsync(Scene zoneScene)
         {
             try

@@ -36,6 +36,7 @@ namespace ET
             }
         }
         
+        // ReSharper disable Unity.PerformanceAnalysis
         public static IAUIEventHandler GetUIEventHandler(this UIEventComponent self,WindowID windowID)
         {
             if (self.UIEventHandlers.TryGetValue(windowID, out IAUIEventHandler handler))

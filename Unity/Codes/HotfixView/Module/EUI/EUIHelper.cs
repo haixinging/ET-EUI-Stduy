@@ -10,7 +10,7 @@ namespace ET
     public static class EUIHelper
     {
         
-  #region UI辅助方法
+#region UI辅助方法
 
         public static void SetText(this Text Label, string content )
         {
