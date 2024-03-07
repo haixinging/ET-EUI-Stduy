@@ -290,5 +290,12 @@ namespace ET
                 tcs.SetResult(ret);
             }
         }
+
+        public static void MoveTo(this MoveComponent self, float3 forward, float speed)
+        {
+            Unit unit = self.GetParent<Unit>();
+            unit.Position = unit.Position + forward * speed;
+            unit.Rotation = self.To = quaternion.LookRotation(forward, math.up());;
+        }
     }
 }

@@ -1,5 +1,7 @@
 using System;
+using Unity.Mathematics;
 using UnityEngine;
+using System.Collections.Generic;
 
 namespace ET.Client
 {
@@ -38,6 +40,34 @@ namespace ET.Client
             {
                 C2M_TransferMap c2MTransferMap = new();
                 self.Root().GetComponent<ClientSenderCompnent>().Call(c2MTransferMap).Coroutine();
+            }
+
+            if (Input.GetKey(KeyCode.W))
+            {
+                UnitComponent unitComponent = self.GetParent<Scene>().GetComponent<UnitComponent>();
+                Unit unit = unitComponent.GetChild<Unit>(unitComponent.CurrentUnitId);
+                unit.GetComponent<MoveComponent>().MoveTo(new float3(0,0,1), 0.01f);
+            }
+            
+            if (Input.GetKey(KeyCode.S))
+            {
+                UnitComponent unitComponent = self.GetParent<Scene>().GetComponent<UnitComponent>();
+                Unit unit = unitComponent.GetChild<Unit>(unitComponent.CurrentUnitId);
+                unit.GetComponent<MoveComponent>().MoveTo(new float3(0,0,-1), 0.01f);
+            }
+            
+            if (Input.GetKey(KeyCode.A))
+            {
+                UnitComponent unitComponent = self.GetParent<Scene>().GetComponent<UnitComponent>();
+                Unit unit = unitComponent.GetChild<Unit>(unitComponent.CurrentUnitId);
+                unit.GetComponent<MoveComponent>().MoveTo(new float3(-1,0,0), 0.01f);
+            }
+            
+            if (Input.GetKey(KeyCode.D))
+            {
+                UnitComponent unitComponent = self.GetParent<Scene>().GetComponent<UnitComponent>();
+                Unit unit = unitComponent.GetChild<Unit>(unitComponent.CurrentUnitId);
+                unit.GetComponent<MoveComponent>().MoveTo(new float3(1,0,0), 0.01f);
             }
         }
     }
